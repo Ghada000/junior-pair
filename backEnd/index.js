@@ -130,7 +130,7 @@ app.get('/api/plants', (req, res) => {
     });
   });
 
-  app.getByCategory('/api/occasions/:category',(req, res) => {
+  app.get('/api/occasions/:category',(req, res) => {
     const category = req.params.category;
   
     if (!category) {
@@ -147,8 +147,8 @@ app.get('/api/plants', (req, res) => {
     });
   }
 
-  )
-  app.getByCategory('/api/plants/:plants',(req, res) => {
+  );
+  app.get('/api/plants/:plants',(req, res) => {
     const category = req.params.category;
   
     if (!category) {

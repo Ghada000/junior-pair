@@ -84,6 +84,134 @@
 .mr-auto{
   background: rgb(220, 156, 177);
 }
-  #basic-nav-dropdown{
-    
-  }
+
+/* app.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.landing-page {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url("https://i.pinimg.com/236x/3b/c2/a7/3bc2a70251c1c17570bd499ee6419862.jpg");
+
+}
+
+.header {
+  text-align: center;
+  background-color: #ffccf0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  color: #ff0066;
+  font-size: 2em;
+}
+
+.header p {
+  color: #333;
+}
+
+.promotional-section {
+  background-color: #ffe6f2;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.promotional-section h2 {
+  color: #ff0066;
+  font-size: 1.5em;
+}
+
+.promotional-section p {
+  color: #333;
+}
+
+.promotional-section button {
+  background-color: #dc3545ba;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.about-us,
+.contact-us {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-us h2,
+.contact-us h2 {
+  color: #ff0066;
+  font-size: 1.5em;
+}
+
+.about-us p,
+.contact-us p {
+  color: #333;
+}
+
+.about-us button,
+.contact-us button {
+  background-color: #dc3545ba;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffccf0;
+  border-radius: 10px;
+}
+
+.footer p {
+  color: #333;
+  font-size: 0.8em;
+}
+
+ 
+/* App.css */
+
+/* Add this style for the flower-section */
+.flower-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+/* Style for individual flower images */
+.flower-section img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for flower images */
+.flower-section img:hover {
+  transform: scale(1.1);
+}
+

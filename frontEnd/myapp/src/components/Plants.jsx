@@ -40,7 +40,7 @@ function Plants() {
         setDescription('');
         setImage('');
         setCategory('');
-        setInput(false); // Reset input state after adding a new plant
+        setInput(false); 
       })
       .catch(error => {
         console.log(error);

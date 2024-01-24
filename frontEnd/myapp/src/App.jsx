@@ -6,18 +6,20 @@ import Nav from './components/Nav';
 import Home from './components/Home.jsx'
 
 function App() {
-  const[view,setView]=useState("Home")
-  const changeView = (newView)=>{
-    setView(newView)
-  }
+  // const[view,setView]=useState("Home")
+  // const changeView = (newView)=>{
+  //   setView(newView)
+  // }
   return (
     <div className="App">
-      <Nav changeView={changeView}/>
+      {/* <Nav changeView={changeView}/>
       {view==="Home"&& <Home/>}
       {view==="Occasions"&& <Occasions />}
-      {view==="Plants"&& <Plants/>}
-     {/* <Plants/>  */}
-    <Occasions/> 
+      {view==="Plants"&& <Plants/>} */}
+     
+    {/* <Occasions/>  */}
+    <Nav/>
+    <Home/> 
   </div>
   );
 }
