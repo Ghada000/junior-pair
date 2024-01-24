@@ -1,17 +1,18 @@
-import React from 'react'
-import Nav from './components/Nav.jsx'
+import React from 'react';
+import '../src/App.css'
+import Occasions from './components/Occasions'
+import Plants from './components/Plants';
+import Nav from './components/Nav';
 
 function App() {
   return (
-    <div>
-
-
-
-
+    <div className="App">
       <Nav/>
-    </div>
-  )
+     <Plants/> 
+    {/* <Occasions/>  */}
+  </div>
+  );
 }
 
-export default App
+export default App;
 
