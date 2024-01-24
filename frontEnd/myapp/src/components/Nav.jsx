@@ -4,15 +4,15 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css'
 
-function AppNavbar() {
+function AppNavbar( props) {
   return (
     <Navbar bg="light" expand="lg">
       <Navbar.Brand href="#home">Mon amie LAROSE</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#about">About Us</Nav.Link>
+          <Nav.Link onClick={()=>{props.changeView("Home") }}>Home</Nav.Link>
+          <Nav.Link onClick={()=>{props.changeView("About us") }}>About Us</Nav.Link>
           <NavDropdown title="Occasions" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/occasions">Occasions Link</NavDropdown.Item>
             {/* Add more NavDropdown.Items as needed */}

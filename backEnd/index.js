@@ -130,6 +130,44 @@ app.get('/api/plants', (req, res) => {
     });
   });
 
+  app.getByCategory('/api/occasions/:category',(req, res) => {
+    const category = req.params.category;
+  
+    if (!category) {
+        return res.status(400).send("Category parameter is required");
+    }
+    db.getByCategoryOccasions(category, (err, result) => {
+        if (err) {
+            return res.status(500).send(err);
+        } else if (!result || result.length === 0) {
+            return res.status(404).send(err);
+        } else {
+            return res.status(200).json(result);
+        }
+    });
+  }
+
+  )
+  app.getByCategory('/api/plants/:plants',(req, res) => {
+    const category = req.params.category;
+  
+    if (!category) {
+        return res.status(400).send("Category parameter is required");
+    }
+    db.getByCategoryPlants(category, (err, result) => {
+        if (err) {
+            return res.status(500).send(err);
+        } else if (!result || result.length === 0) {
+            return res.status(404).send(err);
+        } else {
+            return res.status(200).json(result);
+        }
+    });
+  }
+  )
+
+
+  
 app.listen(port, () => {
   console.log('Server listening on port', port);
 });

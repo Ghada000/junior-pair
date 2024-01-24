@@ -30,15 +30,15 @@
 
 
 .navbar {
-  background-color: #F8F9FA;
-  border-bottom: 2px solid #D3D3D3;
+  background-color: pink;
+  border-bottom: 10px solid #6c757d;
   padding: 10px 20px;
 }
 
 .navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  color: #28a745; /* Green color for the brand */
+  font-size: 50px;
+  font-weight: bolder;
+  color: #6c757d; 
 }
 
 .navbar-toggler-icon {
@@ -47,7 +47,7 @@
 
 .nav-link, .nav-dropdown-item {
   color: #6c757d; /* Text color for the links */
-  font-size: 16px;
+  font-size: 50px;
 }
 
 .nav-link:hover, .nav-dropdown-item:hover {
@@ -80,3 +80,10 @@
   }
 }
 
+
+.mr-auto{
+  background: rgb(220, 156, 177);
+}
+  #basic-nav-dropdown{
+    
+  }
