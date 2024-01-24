@@ -35,7 +35,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 -- -----------------------------------------------------
 -- Table `flowers`.`plants`
--- -----------------------------------------------------
+-- ----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `flowers`.`plants` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NOT NULL,
