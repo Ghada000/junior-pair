@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Nav/>
-     <Plants/> 
-    {/* <Occasions/>  */}
+     {/* <Plants/>  */}
+    <Occasions/> 
   </div>
   );
 }
