@@ -1,4 +1,4 @@
-/* Plants.css */
+
 
 .plants {
   display: flex;
@@ -26,58 +26,192 @@
   margin-top: 10px;
 }
 
-/* Nav.css */
+
+
 
 .navbar {
-  background-color: #f8f9fa;
+  background-color: pink;
+  border-bottom: 10px solid #6c757d;
+  padding: 10px 20px;
 }
 
 .navbar-brand {
-  color: #007bff;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #6c757d; 
 }
 
 .navbar-toggler-icon {
-  background-color: #007bff;
+  border: 2px solid #28a745;
 }
 
-.navbar-nav-scroll {
-  --bs-scroll-height: 100px;
+.nav-link, .nav-dropdown-item {
+  color: #6c757d; /* Text color for the links */
+  font-size: 50px;
 }
 
-.navbar-nav-scroll li {
-  margin-right: 10px;
+.nav-link:hover, .nav-dropdown-item:hover {
+  color: #28a745; /* Hover color for the links */
 }
 
-.navbar-nav-scroll .nav-link {
-  color: #007bff;
+/* Styling the dropdown menus */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
-.navbar-nav-scroll .nav-link.active {
-  color: #0056b3;
+.dropdown-menu {
+  background-color: #F8F9FA;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav-scroll .dropdown-menu {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-}
-
-.navbar-nav-scroll .dropdown-item {
-  color: #007bff;
-}
-
-.navbar-nav-scroll .dropdown-divider {
-  background-color: #dee2e6;
-}
-
-.navbar-nav-scroll .nav-link.disabled {
+.dropdown-item {
   color: #6c757d;
 }
 
-.form-control {
-  margin-right: 10px;
+.dropdown-item:hover {
+  color: #28a745;
+  background-color: #E9ECEF;
 }
 
-.btn-outline-success {
-  color: #28a745;
-  border-color: #28a745;
+/* Responsive styles */
+@media (max-width: 767px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
 }
+
+
+.mr-auto{
+  background: rgb(220, 156, 177);
+}
+
+/* app.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+}
+
+.landing-page {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url("https://i.pinimg.com/236x/3b/c2/a7/3bc2a70251c1c17570bd499ee6419862.jpg");
+
+}
+
+.header {
+  text-align: center;
+  background-color: #ffccf0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  color: #ff0066;
+  font-size: 2em;
+}
+
+.header p {
+  color: #333;
+}
+
+.promotional-section {
+  background-color: #ffe6f2;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.promotional-section h2 {
+  color: #ff0066;
+  font-size: 1.5em;
+}
+
+.promotional-section p {
+  color: #333;
+}
+
+.promotional-section button {
+  background-color: #dc3545ba;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.about-us,
+.contact-us {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-us h2,
+.contact-us h2 {
+  color: #ff0066;
+  font-size: 1.5em;
+}
+
+.about-us p,
+.contact-us p {
+  color: #333;
+}
+
+.about-us button,
+.contact-us button {
+  background-color: #dc3545ba;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffccf0;
+  border-radius: 10px;
+}
+
+.footer p {
+  color: #333;
+  font-size: 0.8em;
+}
+
+ 
+/* App.css */
+
+/* Add this style for the flower-section */
+.flower-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+/* Style for individual flower images */
+.flower-section img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for flower images */
+.flower-section img:hover {
+  transform: scale(1.1);
+}
+
