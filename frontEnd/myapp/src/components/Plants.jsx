@@ -1,6 +1,4 @@
-
-
-  import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../App.css';
 
@@ -146,13 +144,13 @@ function Plants() {
               <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
               <input type="text" value={image} onChange={(e) => setImage(e.target.value)} />
               <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
-              <button onClick={() => handleUpdate(item.id)}>Update</button>
+              <button className="btn" onClick={() => handleUpdate(item.id)}>Update</button>
             </>
           ) : (
-            <button onClick={() => handleUpdateClick(item.id)}>Update</button>
+            <button className="btn" onClick={() => handleUpdateClick(item.id)}>Update</button>
           )}
 
-          <button onClick={() => handleDelete(item.id)}>Delete</button>
+          <button  className="btn" onClick={() => handleDelete(item.id)}>Delete</button>
         </div>
       ))}
     </div>

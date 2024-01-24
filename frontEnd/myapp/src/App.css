@@ -1,4 +1,4 @@
-/* Plants.css */
+
 
 .plants {
   display: flex;
@@ -26,58 +26,57 @@
   margin-top: 10px;
 }
 
-/* Nav.css */
+
+
 
 .navbar {
-  background-color: #f8f9fa;
+  background-color: #F8F9FA;
+  border-bottom: 2px solid #D3D3D3;
+  padding: 10px 20px;
 }
 
 .navbar-brand {
-  color: #007bff;
+  font-size: 24px;
+  font-weight: bold;
+  color: #28a745; /* Green color for the brand */
 }
 
 .navbar-toggler-icon {
-  background-color: #007bff;
+  border: 2px solid #28a745;
 }
 
-.navbar-nav-scroll {
-  --bs-scroll-height: 100px;
+.nav-link, .nav-dropdown-item {
+  color: #6c757d; /* Text color for the links */
+  font-size: 16px;
 }
 
-.navbar-nav-scroll li {
-  margin-right: 10px;
+.nav-link:hover, .nav-dropdown-item:hover {
+  color: #28a745; /* Hover color for the links */
 }
 
-.navbar-nav-scroll .nav-link {
-  color: #007bff;
+/* Styling the dropdown menus */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
-.navbar-nav-scroll .nav-link.active {
-  color: #0056b3;
+.dropdown-menu {
+  background-color: #F8F9FA;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-nav-scroll .dropdown-menu {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-}
-
-.navbar-nav-scroll .dropdown-item {
-  color: #007bff;
-}
-
-.navbar-nav-scroll .dropdown-divider {
-  background-color: #dee2e6;
-}
-
-.navbar-nav-scroll .nav-link.disabled {
+.dropdown-item {
   color: #6c757d;
 }
 
-.form-control {
-  margin-right: 10px;
+.dropdown-item:hover {
+  color: #28a745;
+  background-color: #E9ECEF;
 }
 
-.btn-outline-success {
-  color: #28a745;
-  border-color: #28a745;
+/* Responsive styles */
+@media (max-width: 767px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
 }
+
