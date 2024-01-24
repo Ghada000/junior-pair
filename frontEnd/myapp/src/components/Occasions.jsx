@@ -12,7 +12,7 @@ function Occasions() {
     axios.get('http://localhost:8080/api/occasions')
       .then((response) => {
         setData(response.data);
-        setFilteredData(response.data); // Initially set filteredData to all data
+        setFilteredData(response.data); 
         setError(null);
       })
       .catch((error) => {
@@ -21,7 +21,7 @@ function Occasions() {
       });
   }, []);
 
-  // Update filteredData when searchQuery changes
+  
   useEffect(() => {
     const filtered = data.filter(item =>
       item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
