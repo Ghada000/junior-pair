@@ -7,7 +7,7 @@ import '../App.css'
 function AppNavbar( props) {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Mon amie LAROSE</Navbar.Brand>
+      <Navbar.Brand href="#home">Beautiful Blooms</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

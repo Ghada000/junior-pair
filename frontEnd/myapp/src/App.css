@@ -105,32 +105,34 @@ body {
   text-align: center;
   background-color: #ffccf0;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 6000px;
 }
 
 .header h1 {
-  color: #ff0066;
-  font-size: 2em;
+  color: #18010a;
+  font-size: 5em;
 }
 
 .header p {
   color: #333;
+  font-size:1.5em ;
 }
 
 .promotional-section {
   background-color: #ffe6f2;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 6000px;
   margin-top: 20px;
 }
 
 .promotional-section h2 {
   color: #ff0066;
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 .promotional-section p {
   color: #333;
+  font-size: 1.5em;
 }
 
 .promotional-section button {
@@ -138,17 +140,18 @@ body {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   font-size: 1em;
   margin-top: 20px;
+ 
 }
 
 .about-us,
 .contact-us {
   background-color: #fff;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 500px;
   margin-top: 20px;
 }
 
@@ -161,6 +164,7 @@ body {
 .about-us p,
 .contact-us p {
   color: #333;
+  font-size: 1.5em;
 }
 
 .about-us button,
@@ -169,7 +173,7 @@ body {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+   border-radius: 50px;
   cursor: pointer;
   font-size: 1em;
   margin-top: 20px;
@@ -180,7 +184,7 @@ body {
   margin-top: 20px;
   padding: 10px;
   background-color: #ffccf0;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .footer p {
@@ -215,3 +219,229 @@ body {
   transform: scale(1.1);
 }
 
+.facebook{
+  width: 50px;
+  height : 50px
+}
+.instagram{
+  width: 50px;
+  height : 50px
+}
+.twitter{
+  width: 50px;
+  height : 50px
+}
+
+/* App.css */
+
+/* ... (existing styles) */
+
+.dynamic-header {
+  transition: background-color 0.5s ease-in-out;
+}
+
+.dynamic-header.scrolled {
+  background-color: #333; /* Change this to the desired background color when scrolled */
+}
+
+/* App.css */
+
+/* ... (existing styles) */
+
+.dynamic-header {
+  transition: background-color 3s ease-in-out;
+}
+
+.dynamic-header.scrolled {
+  background-color: #640271; /* Change this to the desired background color when scrolled */
+}
+
+
+
+/* App.css */
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffe6f7; /* Light pink background */
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ff66b2; /* Pink border */
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #ff66b2; /* Pink background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e64d98; /* Darker pink on hover */
+}
+
+/* Individual item styling */
+div {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ff66b2; /* Pink border for each item */
+  border-radius: 10px;
+  background-color: #fff; /* White background */
+}
+
+h2 {
+  color: #ff66b2; /* Pink text */
+  margin-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ff66b2; /* Pink background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e64d98; /* Darker pink on hover */
+}
+
+/* Update input styling */
+input[type="text"] {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ff66b2; /* Pink border */
+  border-radius: 5px;
+}
+/* App.css */
+
+/* ... (previous styles) */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100px;
+  max-height: 400px; /* Set the maximum height for the images */
+}
+
+/* ... (remaining styles) */
+.name {
+  color: #640271;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: xx-large;
+ font-weight: 500;
+
+}
+.description {
+  font-size: larger;
+  color: #692f46;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.price{
+  font-size: larger;
+color: #d537ea;}
+
+.category{
+  font-size: larger;
+  color: #d537ea;
+}
+
+/* App.css */
+
+/* ... (previous styles) */
+
+/* Update button styling */
+.btn-update {
+  padding: 20px 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff66b2; /* Green background */
+  color: #e3dada;
+  transition: background-color 1s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  size: 5em;
+  margin-left: 20%;
+}
+
+/* Update button hover effect */
+.btn-update:hover {
+  background-color: #380820; /* Darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Delete button styling */
+.btn-delete {
+  padding: 20px 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff66b2; /* Red background */
+  color: rgb(230, 228, 229);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Delete button hover effect */
+.btn-delete:hover {
+  background-color: #380820; /* Darker red on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ... (remaining styles) */
+.add{
+  padding: 50px 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff66b2; /* Red background */
+  color: rgb(230, 228, 229);
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+ 
+}
+
+.btn-update {
+  font-size: 30px; /* Adjust the font size as needed */
+  /* ... (previous styles) */
+}
+
+/* Style for the text inside the delete button */
+.btn-delete {
+  font-size: 30px; /* Adjust the font size as needed */
+  /* ... (previous styles) */
+}
+/* App.css */
+
+/* ... (previous styles) */
+
+/* Style for the 'add' button */
+.add {
+  font-size: 40px; /* Adjust the font size as needed */
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* ... (remaining styles) */

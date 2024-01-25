@@ -96,7 +96,7 @@ function Plants() {
   return (
     <div>
       <div className="add-container">
-        <button onClick={() => setInput(true)}>Tap to add</button>
+        <button className='add' onClick={() => setInput(true)}>Tap to add</button>
         {input && (
           <div className="input-fields">
             <input
@@ -133,11 +133,11 @@ function Plants() {
 
       {data.map((item) => (
         <div key={item.id}>
-          <h2>{item.name}</h2>
-          <h2>{item.description}</h2>
-          <h2>{item.price}</h2>
-          <h2>{item.category}</h2>
-          <img src={item.image} alt={`Article ${item.id}`} />
+          <h6 className='name'>Name : {item.name}</h6>
+          <h6 className='description'>Description : {item.description}</h6>
+          <h6 className='price'>Price : {item.price}</h6>
+          <h6 className='category'>Category : {item.category}</h6>
+          <img className='image'src={item.image} alt={`Article ${item.id}`} />
 
           {editingId === item.id ? (
             <>
@@ -147,10 +147,10 @@ function Plants() {
               <button className="btn" onClick={() => handleUpdate(item.id)}>Update</button>
             </>
           ) : (
-            <button className="btn" onClick={() => handleUpdateClick(item.id)}>Update</button>
+            <button className=" btn-update" onClick={() => handleUpdateClick(item.id)}>Update</button>
           )}
 
-          <button  className="btn" onClick={() => handleDelete(item.id)}>Delete</button>
+          <button  className=" btn-delete" onClick={() => handleDelete(item.id)}>Delete</button>
         </div>
       ))}
     </div>
