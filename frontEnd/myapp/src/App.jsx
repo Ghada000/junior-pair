@@ -1,6 +1,6 @@
 import React from 'react';
-import PlantCard from './components/PlantCard.jsx'; // Assuming you have a PlantCard component
-import '../src/App.css'
+import PlantCard from './components/Occasions.jsx'; // Assuming you have a PlantCard component
+import '../src/App.css';
 
 function App() {
   return (
@@ -23,4 +23,3 @@ function App() {
 }
 
 export default App;
-
