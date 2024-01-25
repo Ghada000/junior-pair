@@ -16,10 +16,12 @@ function App() {
       {view==="Home"&& <Home/>}
       {view==="Occasions"&& <Occasions />}
       {view==="Plants"&& <Plants/>} */}
-     
+      
     {/* <Occasions/>  */}
     <Nav/>
-    <Home/> 
+    <Plants/>
+      
+    {/* <Home/>  */}
   </div>
   );
 }
