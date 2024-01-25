@@ -88,7 +88,27 @@ connection.connect((err) => {
                   callback(error,results)
               })
           }
-  
+  ,
+  getByCategoryOccasions : function (category, callback) {
+    const query = 'SELECT * FROM `occasions` WHERE category=?';
+    connection.query(query, [category], (err, result) => {
+        if (err) {
+            callback(err, null);
+        } else {
+            callback(null, result);
+        }
+    });
+}, 
+ getByCategoryPlants : function (category, callback) {
+  const query = 'SELECT * FROM `plants` WHERE category=?';
+  connection.query(query, [category], (err, result) => {
+      if (err) {
+          callback(err, null);
+      } else {
+          callback(null, result);
+      }
+  });
+}
         
 
       };

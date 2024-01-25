@@ -1,24 +1,28 @@
-import React from 'react';
-import PlantCard from './components/Occasions.jsx'; // Assuming you have a PlantCard component
-import '../src/App.css';
+import React ,  {useState}from 'react';
+import '../src/App.css'
+import Occasions from './components/Occasions'
+import Plants from './components/Plants';
+import Nav from './components/Nav';
+import Home from './components/Home.jsx'
 
 function App() {
+  // const[view,setView]=useState("Home")
+  // const changeView = (newView)=>{
+  //   setView(newView)
+  // }
   return (
     <div className="App">
-      <nav className="navbar">
-        <div className="store-name">Smart Store</div>
-        <div className="nav-icons">
-          <div className="nav-icon" >
-            <i className="fas fa-plus"></i> Create
-          </div>
-          <div className="nav-icon">
-            <i className="fas fa-search"></i>
-            <input type="text" placeholder="Search products..." className="search-input" />
-          </div>
-        </div>
-      </nav>
-      <PlantCard />
-    </div>
+      {/* <Nav changeView={changeView}/>
+      {view==="Home"&& <Home/>}
+      {view==="Occasions"&& <Occasions />}
+      {view==="Plants"&& <Plants/>} */}
+      
+    {/* <Occasions/>  */}
+    <Nav/>
+    <Plants/>
+      
+    {/* <Home/>  */}
+  </div>
   );
 }
 
