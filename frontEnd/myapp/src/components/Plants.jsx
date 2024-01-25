@@ -133,7 +133,7 @@ function Plants() {
 
       {data.map((item) => (
         <div key={item.id}>
-          <h6 className='name'>Name : {item.name}</h6>
+          <h6 className= 'name'>Name : {item.name}</h6>
           <h6 className='description'>Description : {item.description}</h6>
           <h6 className='price'>Price : {item.price}</h6>
           <h6 className='category'>Category : {item.category}</h6>
